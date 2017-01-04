@@ -23,7 +23,7 @@ What surprised me was the ease with which I could experiment with a customer chu
 I decided to experiment the orange dataset for the churn problem from KDD 2009.
 
 <figure>
-	<img src="/datascientist/images/churn1.png" alt="image">
+	<img src="/images/churn1.png" alt="image">
 </figure>
 
 I could easily play with the decision tree parameters and score and evaluate the models with much each.
@@ -34,7 +34,7 @@ Of course if you are looking for more control and your own customized solutions 
 Even in that case the Azure ML studio offers a great platform for machine learning.
 
 <figure>
-	<img src="/datascientist/images/churn2.png" alt="image">
+	<img src="/images/churn2.png" alt="image">
 </figure>
 
 [book1]: https://read.amazon.com/kp/card?asin=B00MBL261W&preview=inline&linkCode=kpe&ref_=cm_sw_r_kb_dp_yQEiyb9BER83H&tag=oracledat-20

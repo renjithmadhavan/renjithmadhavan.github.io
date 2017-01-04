@@ -88,5 +88,5 @@ for rank, column in enumerate(majors):
 ```
 
 
-<img src="/datascientist/figures/percent-bachelors-degrees-women-usa.png" alt="image" align="center">
+<img src="/figures/percent-bachelors-degrees-women-usa.png" alt="image" align="center">
 

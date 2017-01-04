@@ -43,5 +43,5 @@ gganimate(p)
 
 The R gif output is below.
 
-<img src="/datascientist/images/file_show.gif" alt="image" align="center">
+<img src="/images/file_show.gif" alt="image" align="center">
 

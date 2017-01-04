@@ -293,7 +293,7 @@ g = sns.factorplot(x="Method", y="Score", col="ML",
 
 
 
-![png](/datascientist/figures/2016-12-28-human-activity-recognition-with-smartphones_20_1.png)
+![png](/figures/2016-12-28-human-activity-recognition-with-smartphones_20_1.png)
 
 
 #### Running Time
@@ -317,7 +317,7 @@ g = sns.factorplot(x="Method", y="elapsed", col="ML",
 
 
 
-![png](/datascientist/figures/2016-12-28-human-activity-recognition-with-smartphones_22_1.png)
+![png](/figures/2016-12-28-human-activity-recognition-with-smartphones_22_1.png)
 
 
 ### Summary
