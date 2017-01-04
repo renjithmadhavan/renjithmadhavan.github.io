@@ -1,0 +1,60 @@
+# Site wide configuration
+
+title: Renjith Madhavan 
+locale: en_US
+description: Random Notes from a Data Scientist 
+logo: site-logo.png
+search: true
+url: https://renjithmadhavan.github.io/datascientist 
+
+# Jekyll configuration
+
+permalink:   /:categories/:title/
+markdown:    kramdown
+highlighter: rouge
+sass:
+  sass_dir: _sass
+  style: compressed
+gems:
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+
+kramdown:
+  input: GFM
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..2
+  enable_coderay: false
+      
+mathjax: true
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", ".less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md", "vendor"]
+
+
+# Site owner
+owner:
+  name: Renjith Madhavan 
+  avatar: bio-photo.jpg
+  email: renjithmadhavan@email.com
+  disqus-shortname: rdatastats
+  twitter: renjithmadhavan 
+  facebook: #username
+  github: renjithmadhavan
+  stackexchange: http://stackoverflow.com/users/5441559/renjithmadhavan
+  linkedin: renjithmadhavan
+  instagram: #username
+  flickr: #username
+  tumblr: #username
+  pinterest: #username
+  weibo: #userid
+  google:
+    plus: #username
+    analytics:
+    verify:
+    ad-client:
+    ad-slot:
+  bing-verify:
+  comments: true

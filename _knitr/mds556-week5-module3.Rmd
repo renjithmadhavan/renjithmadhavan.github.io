@@ -1,0 +1,64 @@
+---
+title: "MDS556-Week5- Module3"
+output:
+  pdf_document: default
+  html_notebook: default
+  html_document: default
+---
+
+# Impact of fitting GAM over Linear Regression
+
+## Load the data
+The Boston dataset has dataset about the housing values in the suburbs of Boston.
+We will use the dis (weighted mean of distance to 5 Boston Employment centers) as the dependent variable, and nox (nitrogen oxide concentration) as the independent variable.
+We will also split the dataset into train and test sets using a 75% cutoff.
+
+```{r}
+library(mgcv)
+library(MASS)
+head(Boston)
+str(Boston)
+train <- Boston[1:380,]
+test <- Boston[381:506,]
+dim(train)
+dim(test)
+```
+
+## Linear Regression applied to our data
+
+```{r}
+lin.model <- lm(dis ~ nox, data = train)
+summary(lin.model)
+resid.lin <- train$dis-predict(lin.model)
+sqrt(mean(resid.lin^2))
+```
+
+## Applying GAM to the data
+
+```{r}
+glin.model <- gam(dis ~ s(nox), data = train)
+glin.model$converged
+summary(glin.model)
+resid.glin <- train$dis-predict(glin.model)
+sqrt(mean(resid.glin^2))
+```
+
+
+## Comparing Linear Regression and GAM performance
+
+```{r}
+actual <- test$dis
+pred.lin <- predict(lin.model, newdata=test)
+pred.glin <- predict(glin.model, newdata=test)
+resid.lin <- actual-pred.lin
+resid.glin <- actual-pred.glin
+sqrt(mean(resid.lin^2))
+sqrt(mean(resid.glin^2))
+cor(actual, pred.lin)^2
+cor(actual, pred.glin)^2
+```
+
+## Summary
+It can be seen that the GAM scores are much better when compared to linear regression model. However the training and test scores are not similar and in this case it can be seen as overfitting. In the example data was split in the raw order, may be random split of data into training and test should be considered. 
+
+
