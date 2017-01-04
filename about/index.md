@@ -12,7 +12,7 @@ image:
 
 
 <figure align="center">
-	<img src="/datascientist/images/bio-photo.jpg" alt="image" align="center">
+	<img src="/images/bio-photo.jpg" alt="image" align="center">
 </figure>
 
 
