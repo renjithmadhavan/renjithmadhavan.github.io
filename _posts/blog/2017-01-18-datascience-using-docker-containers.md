@@ -41,15 +41,13 @@ easy and can no way be compared to the Windows experience.
 
 3. Add relevant key to the key-chain
 
-```python
-
-sudo apt-get install apt-transport-https ca-certificates
-sudo apt-key adv \
-    --keyserver hkp://ha.pool.sks-keyservers.net:80
-    --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
-
-```
-
+        ```python
+		sudo apt-get install apt-transport-https ca-certificates
+        sudo apt-key adv \
+            --keyserver hkp://ha.pool.sks-keyservers.net:80
+            --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
+        ```
+		
 4. Add the docker repository for my Ubuntu version
 
 5. Update APT package index and verify it is using the right repository.
