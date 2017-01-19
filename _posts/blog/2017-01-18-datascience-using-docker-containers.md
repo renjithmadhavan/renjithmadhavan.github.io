@@ -24,14 +24,18 @@ I happened to read this article http://blog.kaggle.com/2016/02/05/how-to-get-sta
 Below are the steps I followed to get the initial setup up and running. I have to mention that setting up docker was super easy and can no way be compared to the Windows experience.
 
    1. Installed Ubuntu 16.04.1 - 64 Bit 
-   2. Referred Docker Documentation at will - https://docs.docker.com
+   2. Refer Docker Documentation at will - https://docs.docker.com
    3. Add relevant key to the key-chain
 
        ```sh
        sudo apt-get install apt-transport-https ca-certificates
+
        sudo apt-key adv \
+
 	               --keyserver hkp://ha.pool.sks-keyservers.net:80 \
+
 	               --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
+
        ```
    4. Add the docker repository for my Ubuntu version
    5. update APT package index and verify it is using the right repository.
