@@ -27,7 +27,8 @@ Below are the steps I followed to get the initial setup up and running. I have t
    2. Refer Docker Documentation at will - https://docs.docker.com
    3. Add relevant key to the key-chain
 
-       ```sh
+       ```python
+
        sudo apt-get install apt-transport-https ca-certificates
 
        sudo apt-key adv \
