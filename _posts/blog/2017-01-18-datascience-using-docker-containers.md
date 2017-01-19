@@ -35,11 +35,11 @@ try Python and practise it as much as possible. This struck me as a perfect plat
 Below are the steps I followed to get the initial setup up and running. I have to mention that setting up docker was super 
 easy and can no way be compared to the Windows experience.
 
-Installed Ubuntu 16.04.1 - 64 Bit
+1. Installed Ubuntu 16.04.1 - 64 Bit
 
-Refer Docker Documentation - [Docker Docs](https://docs.docker.com)
+2. Refer Docker Documentation - [Docker Docs](https://docs.docker.com)
 
-Add relevant key to the key-chain
+3. Add relevant key to the key-chain
 
 ```python
 
@@ -50,6 +50,6 @@ sudo apt-key adv \
 
 ```
 
-Add the docker repository for my Ubuntu version
+4. Add the docker repository for my Ubuntu version
 
-Update APT package index and verify it is using the right repository.
+5. Update APT package index and verify it is using the right repository.
