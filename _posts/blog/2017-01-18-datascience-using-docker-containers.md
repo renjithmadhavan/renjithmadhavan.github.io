@@ -21,25 +21,25 @@ interested to do the same.
 ### The Motivation
 
 I happened to read this article [Kaggle Blog](http://blog.kaggle.com/2016/02/05/how-to-get-started-with-data-science-in-containers), 
-which was infact the motivation behind my attempt to try Dockers in the first place. Though the article examples are for Mac users, 
+which was infact the motivation behind my attempt to try Dockers in the first place. Though the examples in the article are for Mac users, 
 I was sure Linux shouldn’t be a problem as Mac  OS is just another Unix flavor. 
 
 I bought a new laptop during Thanksgiving shopping. It was a good deal for a Windows laptop ( Windows 10 Pro). I started trying to 
-setup Docker in Windows and soon realized that it will be a long learning curve or as all Linux lovers says, “Windows sucks”. 
+setup Docker in Windows and soon realized that it will be a long learning curve or as many Linux lovers says, “Windows sucks”. 
 Fortunately for me, my old laptop was still in good condition and had 16GB of RAM. I thought that would make an excellent server 
 for my use case and I could open few ports and access it from anywhere. I do most of my data science work using R and wanted to 
-try Python and practise it as much as possible. This struck me as a perfect platform.
+try Python and practice it as much as possible. This struck me as a perfect platform.
 
 ### Initial Setup
 
 Below are the steps I followed to get the initial setup up and running. I have to mention that setting up docker was super 
-easy and can no way be compared to the Windows experience.
+easy in linux and is not fair to be compared to the Windows experience.
 
-Installed Ubuntu 16.04.1 - 64 Bit
+* Installed Ubuntu 16.04.1 - 64 Bit
 
-Refer Docker Documentation - [Docker Docs](https://docs.docker.com)
+* Refer Docker Documentation - [Docker Docs](https://docs.docker.com)
 
-Add relevant key to the key-chain
+* Add relevant key to the key-chain
 
 ```python
 
@@ -50,34 +50,38 @@ sudo apt-key adv \
 
 ```
 		
-Add the docker repository for my Ubuntu version
+* Add the docker repository for my Ubuntu version
 
-Update APT package index and verify it is using the right repository.
+```python
+echo "deb https://apt.dockerproject.org/repo ubuntu-xenial main" | sudo tee
+```
+
+* Update APT package index and verify it is using the right repository.
 
 ```python
 sudo apt-get update
 apt-cache policy docker-engine
 ```
 
-Install Docker
+* Install Docker
 
 ```python
 sudo apt-get install docker-engine
 ```
 
-Start Docker
+* Start Docker
 
 ```python
 sudo service docker start
 ```
 
-Run the docker “Hello World” to test.
+* Run the docker “Hello World” to test.
 
 ```sh
 sudo docker run hello-world
 ```
 
-If you want to run docker commands without using sudo then add your user id to the docker group
+* If you want to run docker commands without using sudo then add your user id to the docker group
 
 ```sh
 sudo groupadd docker
@@ -85,7 +89,7 @@ sudo usermod -aG docker renjith
 docker run hello-world
 ```
 
-Configure Docker to start on system boot.
+* Configure Docker to start on system boot.
 
 ```sh
 sudo systemctl enable docker
